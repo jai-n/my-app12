@@ -1,0 +1,36 @@
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+	  <section>
+	    <%= render 'shared/stats' %>
+      </section>
+	<br>
+	<section>
+	    <%= render 'shared/transactionfeed' %>
+      </section>
+    </aside>
+	<div class="span8">
+		<%= render 'shared/calendarview' %>  
+	</div>
+  </div>  
+<% else %>
+  <div class="center hero-unit">
+    <h1>Welcome to the MoltoSoldiApp</h1>
+
+    <h2>
+      The best way of keeping track of lends & borrows from
+      <a href="http://www.orhancanceylan.com/">Orhan Can Ceylan</a>
+      .
+    </h2>
+
+    <%= link_to "Sign up now!", new_user_session_path, 
+                                class: "btn btn-large btn-primary" %>
+  </div>
+
+
+
+
+<% end %>
