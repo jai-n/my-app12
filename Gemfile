@@ -1,44 +1,35 @@
 source 'http://rubygems.org'
 
-
 gem 'rails', '3.2.9'
-gem 'activerecord-mysql-adapter'
-gem 'devise'
-gem 'omniauth-twitter'
-gem 'omniauth-facebook'
-gem 'bootstrap-sass', '2.0.4'
-gem 'jquery-ui-rails'
-gem 'will_paginate', '3.0.3'
-gem 'bootstrap-will_paginate', '0.0.6'
-gem 'twitter'
-gem 'fb_graph'
-gem 'nifty-generators'
-
-group :development, :test do
-  # gem 'sqlite3', '1.3.5'
-  # gem 'rspec-rails', '2.11.0'
-end
-
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-  gem 'sass-rails',   '3.2.5'
-  gem 'coffee-rails', '3.2.2'
-  gem 'uglifier', '1.2.3'
-end
-
-gem 'jquery-rails', '2.0.2'
-
-group :test do
-  gem 'capybara', '1.1.2'
-end
-
+# gem 'sqlite3', :group => 'development'
+# gem 'pg', :group => 'production'
 group :production do
   gem 'pg', '0.12.2'
 end
+group :assets do
+  gem 'sass-rails', '~> 3.2'
+  gem 'coffee-rails', '~> 3.2'
+  gem 'uglifier', '>= 1.0'
+end
 
-gem "mocha", :group => :test
+# Core dependencies, pulled from master
+gem 'omniauth', :git => 'git://github.com/intridea/omniauth.git'
+gem 'omniauth-oauth2', :git => 'git://github.com/intridea/omniauth-oauth2.git'
+
+# Under active development
+gem 'omniauth-tumblr', :git => 'git://github.com/jamiew/omniauth-tumblr.git'
+#gem 'omniauth-tumblr', :path => '~/dev/omniauth-strategies/omniauth-tumblr'
+gem 'omniauth-youtube', :git => 'git://github.com/jamiew/omniauth-youtube.git'
+#gem 'omniauth-youtube', :path => '~/dev/omniauth-strategies/omniauth-youtube'
+
+
+# For testing/comparison
+gem 'omniauth-facebook'
+gem 'omniauth-github'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-twitter'
+gem 'omniauth-vimeo'
 gem 'debugger'
 gem 'therubyracer'
+gem 'activerecord-mysql-adapter'
 gem 'mysql2'
-

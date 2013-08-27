@@ -1,3 +1,34 @@
+GIT
+  remote: git://github.com/intridea/omniauth-oauth2.git
+  revision: d6409bb14337675e22c50f3c76b5d7f672a631a3
+  specs:
+    omniauth-oauth2 (1.1.1)
+      oauth2 (~> 0.9.0)
+      omniauth (~> 1.0)
+
+GIT
+  remote: git://github.com/intridea/omniauth.git
+  revision: cce54a8eb8b3bd10dc658b51a708d345d9e159d2
+  specs:
+    omniauth (1.1.4)
+      hashie (>= 1.2, < 3)
+      rack
+
+GIT
+  remote: git://github.com/jamiew/omniauth-tumblr.git
+  revision: 078c18c746c3f894e0edb1a0862e75a0d6da67a3
+  specs:
+    omniauth-tumblr (1.1)
+      multi_json
+      omniauth-oauth (~> 1.0)
+
+GIT
+  remote: git://github.com/jamiew/omniauth-youtube.git
+  revision: 51de3d71cb9873eeaab7ed29a8b55bdf73cf5d06
+  specs:
+    omniauth-youtube (2.1)
+      omniauth-oauth2 (~> 1.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -33,21 +64,7 @@ GEM
       i18n (~> 0.6)
       multi_json (~> 1.0)
     arel (3.0.2)
-    attr_required (0.0.5)
-    bcrypt-ruby (3.1.1)
-    bootstrap-sass (2.0.4.0)
-    bootstrap-will_paginate (0.0.6)
-      will_paginate
     builder (3.0.4)
-    capybara (1.1.2)
-      mime-types (>= 1.16)
-      nokogiri (>= 1.3.3)
-      rack (>= 1.0.0)
-      rack-test (>= 0.5.4)
-      selenium-webdriver (~> 2.0)
-      xpath (~> 0.1.4)
-    childprocess (0.3.9)
-      ffi (~> 1.0, >= 1.0.11)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -62,33 +79,15 @@ GEM
       debugger-ruby_core_source (~> 1.2.3)
     debugger-linecache (1.2.0)
     debugger-ruby_core_source (1.2.3)
-    devise (3.0.3)
-      bcrypt-ruby (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.0.0)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
-    fb_graph (2.7.8)
-      httpclient (>= 2.2.0.2)
-      multi_json (>= 1.3)
-      rack-oauth2 (>= 0.14.4)
-      tzinfo
-    ffi (1.9.0)
     hashie (2.0.5)
     hike (1.2.3)
     httpauth (0.2.0)
-    httpclient (2.3.4.1)
     i18n (0.6.5)
     journey (1.0.4)
-    jquery-rails (2.0.2)
-      railties (>= 3.2.0, < 5.0)
-      thor (~> 0.14)
-    jquery-ui-rails (4.0.4)
-      jquery-rails
-      railties (>= 3.1.0)
     json (1.8.0)
     jwt (0.1.8)
       multi_json (>= 1.5)
@@ -97,51 +96,42 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    metaclass (0.0.1)
     mime-types (1.24)
-    mini_portile (0.5.1)
-    mocha (0.14.0)
-      metaclass (~> 0.0.1)
     multi_json (1.7.9)
+    multi_xml (0.5.5)
     multipart-post (1.2.0)
     mysql (2.9.1)
     mysql2 (0.3.13)
-    nifty-generators (0.4.6)
-    nokogiri (1.6.0)
-      mini_portile (~> 0.5.0)
     oauth (0.4.7)
-    oauth2 (0.8.1)
+    oauth2 (0.9.2)
       faraday (~> 0.8)
-      httpauth (~> 0.1)
+      httpauth (~> 0.2)
       jwt (~> 0.1.4)
       multi_json (~> 1.0)
+      multi_xml (~> 0.5)
       rack (~> 1.2)
-    omniauth (1.1.4)
-      hashie (>= 1.2, < 3)
-      rack
     omniauth-facebook (1.4.1)
       omniauth-oauth2 (~> 1.1.0)
+    omniauth-github (1.1.1)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.1)
+    omniauth-google-oauth2 (0.2.1)
+      omniauth (~> 1.0)
+      omniauth-oauth2
     omniauth-oauth (1.0.1)
       oauth
-      omniauth (~> 1.0)
-    omniauth-oauth2 (1.1.1)
-      oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
     omniauth-twitter (1.0.0)
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
-    orm_adapter (0.4.0)
+    omniauth-vimeo (1.0.0)
+      multi_json (~> 1.3)
+      omniauth-oauth (~> 1.0)
     pg (0.12.2)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-oauth2 (1.0.5)
-      activesupport (>= 2.3)
-      attr_required (>= 0.0.5)
-      httpclient (>= 2.2.0.2)
-      multi_json (>= 1.3.6)
-      rack (>= 1.1)
     rack-ssl (1.3.3)
       rack
     rack-test (0.6.2)
@@ -165,18 +155,11 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     ref (1.0.5)
-    rubyzip (0.9.9)
     sass (3.2.10)
-    sass-rails (3.2.5)
+    sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
       tilt (~> 1.3)
-    selenium-webdriver (2.35.0)
-      childprocess (>= 0.2.5)
-      multi_json (~> 1.0)
-      rubyzip
-      websocket (~> 1.0.4)
-    simple_oauth (0.2.0)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -190,44 +173,30 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    twitter (4.8.1)
-      faraday (~> 0.8, < 0.10)
-      multi_json (~> 1.0)
-      simple_oauth (~> 0.2)
     tzinfo (0.3.37)
-    uglifier (1.2.3)
+    uglifier (2.2.0)
       execjs (>= 0.3.0)
-      multi_json (>= 1.0.2)
-    warden (1.2.3)
-      rack (>= 1.0)
-    websocket (1.0.7)
-    will_paginate (3.0.3)
-    xpath (0.1.4)
-      nokogiri (~> 1.3)
+      multi_json (~> 1.0, >= 1.0.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   activerecord-mysql-adapter
-  bootstrap-sass (= 2.0.4)
-  bootstrap-will_paginate (= 0.0.6)
-  capybara (= 1.1.2)
-  coffee-rails (= 3.2.2)
+  coffee-rails (~> 3.2)
   debugger
-  devise
-  fb_graph
-  jquery-rails (= 2.0.2)
-  jquery-ui-rails
-  mocha
   mysql2
-  nifty-generators
+  omniauth!
   omniauth-facebook
+  omniauth-github
+  omniauth-google-oauth2
+  omniauth-oauth2!
+  omniauth-tumblr!
   omniauth-twitter
+  omniauth-vimeo
+  omniauth-youtube!
   pg (= 0.12.2)
   rails (= 3.2.9)
-  sass-rails (= 3.2.5)
+  sass-rails (~> 3.2)
   therubyracer
-  twitter
-  uglifier (= 1.2.3)
-  will_paginate (= 3.0.3)
+  uglifier (>= 1.0)

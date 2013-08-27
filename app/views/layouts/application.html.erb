@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= full_title(yield(:title)) %></title>
-    <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= javascript_include_tag "application" %>
-    <%= csrf_meta_tags %>
-    <%= render 'layouts/shim' %>    
-  </head>
-  <body>
-	 <% flash.each do |name, msg| %>
-	        <%= content_tag :div, msg, id: "flash_#{name}" %>
-	      <% end %>
-    <%= render 'layouts/header' %>
-    <div class="container">
-      <%= yield %>
-      <%= render 'layouts/footer' %>
-    </div>
-  </body>
+<head>
+  <title>omniauth-rails-app</title>
+  <%= stylesheet_link_tag "application" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<h1><a href="http://github.com/jamiew/omniauth-rails-app">omniauth-rails-app</a></h1>
+
+<p>For more information see the <a href="http://github.com/jamiew/omniauth-rails-app#README">README</a></p>
+
+<%= yield %>
+
+</body>
 </html>

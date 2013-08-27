@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-MoltoSoldi::Application.config.secret_token = '02df4068ebf066272951c98f5048e2c36d419535711fb710b8c3a903391de567a58d3f34750b0d0548653ee8229bfe845a3001daeb34c665ec3d2b41c4dbce30'
+Tumblrtv::Application.config.secret_token = 'b774f1f26174a7dd165b6f3053ce5d985cc421a5043538f9c74863d08b9636ce97774c0269774c74732caf0c4cb56eb39c746a569ce147a2012a455f08bdc6e5'
